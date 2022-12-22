@@ -9,7 +9,9 @@ public class Profesor {
     public int edad;
     public String direccion;
     public String telefono;
-    public InformacionAdicionalProfesor info;
+    public int aniosdeTrabajo;
+    public String facultad;
+    public double BonoFijo;
     public ArrayList<Paralelo> paralelos;
 
     public Profesor(String codigo, String nombre, String apellido, String facultad, int edad, String direccion, String telefono) {
@@ -21,7 +23,11 @@ public class Profesor {
         this.telefono = telefono;
         paralelos= new ArrayList<>();
     }
-    
+    public void getInformacionAdicionalProfesor(int aniosdeTrabajo,String facultad, double BonoFijo){
+        this.aniosdeTrabajo=aniosdeTrabajo;
+        this.facultad=facultad;
+        this.BonoFijo=BonoFijo;
+    }
     public void anadirParalelos(Paralelo p){
         paralelos.add(p);
     }
