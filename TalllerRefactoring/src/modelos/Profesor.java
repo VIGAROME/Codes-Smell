@@ -31,6 +31,22 @@ public class Profesor {
     public void anadirParalelos(Paralelo p){
         paralelos.add(p);
     }
+
+    public int getAniosdeTrabajo() {
+        return aniosdeTrabajo;
+    }
+
+    public void setAniosdeTrabajo(int aniosdeTrabajo) {
+        this.aniosdeTrabajo = aniosdeTrabajo;
+    }
+
+    public double getBonoFijo() {
+        return BonoFijo;
+    }
+
+    public void setBonoFijo(double BonoFijo) {
+        this.BonoFijo = BonoFijo;
+    }
     
     
 }

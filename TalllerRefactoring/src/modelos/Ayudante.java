@@ -5,11 +5,13 @@ import java.util.ArrayList;
 public class Ayudante extends Estudiante{
     public ArrayList<Paralelo> paralelos;
 
-    public Ayudante(ArrayList<Paralelo> paralelos) {
+    public Ayudante(String nombre, String apellido, String direccion, int edad) {
+        super(nombre, apellido, direccion, edad);
+    }
+
+    public void setParalelos(ArrayList<Paralelo> paralelos) {
         this.paralelos = paralelos;
     }
-       
-
     //Los paralelos se añaden/eliminan directamente del Arraylist de paralelos
 
 
